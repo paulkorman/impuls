@@ -13,6 +13,7 @@ $(document).ready(function(){
         openEffect: 'fade',
         closeEffect: 'fade',
         closeBtn: false,
+        scrolling: 'no',
         margin: 0,
         minWidth: 280,
         helpers		: {

@@ -1,0 +1,44 @@
+<% var data = {
+  title: "Главная | Импульс4",
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="section-1"></div>
+<div class="section section-2 container">
+  <h4>О компании</h4>
+  <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+  <div class="text-center">
+    <a class="btn btn-forward" href="about.html">Подробнее</a>
+  </div>
+</div>
+<div class="section section-3 container">
+  <h4>Преимущества</h4>
+  <div class="row">
+    <div class="col-6 col-md-3 text-center">
+      <a class="wrap-btn-circle" href="advantages.html">
+        <div class="btn-circle"><img src="img/ico-1.svg" alt=""></div>
+        <div class="btn-circle-title">Комплексное <br>обслуживание</div>
+      </a>
+    </div>
+    <div class="col-6 col-md-3 text-center">
+      <a class="wrap-btn-circle" href="advantages.html#">
+        <div class="btn-circle"><img src="img/ico-2.svg" alt=""></div>
+        <div class="btn-circle-title">Импортное современное<br class="d-none d-lg-inline"> высокоточное оборудование</div>
+      </a>
+    </div>
+    <div class="col-6 col-md-3 text-center">
+      <a class="wrap-btn-circle" href="advantages.html">
+        <div class="btn-circle"><img src="img/ico-3.svg" alt=""></div>
+        <div class="btn-circle-title">Любой<br> уровень <br class="d-none d-md-inline d-lg-none"> сложности</div>
+      </a>
+    </div>
+    <div class="col-6 col-md-3 text-center">
+      <a class="wrap-btn-circle" href="advantages.html">
+        <div class="btn-circle"><img src="img/ico-4.svg" alt=""></div>
+        <div class="btn-circle-title">Нам доверяют<br> 22 года<br class="d-lg-none"> на рынке</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

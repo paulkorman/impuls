@@ -1,0 +1,63 @@
+<% var data = {
+title: "Услуги | Импульс4",
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="section container page services">
+    <h4>Услуги</h4>
+    <div class="row services-list">
+        <div class="col-12 col-md-6 col-lg-4">
+            <a href="service.html">
+                <div class="wrap-img">
+                    <img src="img/services-1.jpg" alt="">
+                </div>
+                <p class="descr">Ремонт двигателей</p>
+            </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <a href="service.html">
+                <div class="wrap-img">
+                    <img src="img/services-1.jpg" alt="">
+                </div>
+                <p class="descr">Ремонт головок двигателей</p>
+            </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <a href="service.html">
+                <div class="wrap-img">
+                    <img src="img/services-1.jpg" alt="">
+                </div>
+                <p class="descr">Ремонт коленчатых валов</p>
+            </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <a href="service.html">
+                <div class="wrap-img">
+                    <img src="img/services-1.jpg" alt="">
+                </div>
+                <p class="descr">Ремонт блоков легковых автомобилей и шатунов всех марок</p>
+            </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <a href="service.html">
+                <div class="wrap-img">
+                    <img src="img/services-1.jpg" alt="">
+                </div>
+                <p class="descr">Ремонт турбин, ТНВД</p>
+            </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <a href="service.html">
+                <div class="wrap-img">
+                    <img src="img/services-1.jpg" alt="">
+                </div>
+                <p class="descr">Ремонт блоков грузовых автомобилей, спецтехники, карданных валов и координатно-расточных работ</p>
+            </a>
+        </div>
+    </div>
+    <div class="inf">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

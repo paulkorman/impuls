@@ -1,0 +1,97 @@
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin btn($height, $borderwidth, $color, $fontweight, $fontsize, $minwidth, $bg-color){
+  height: $height;
+  min-width: $minwidth;
+  border: $borderwidth solid $color;
+  font-weight: $fontweight;
+  font-size: $fontsize;
+  color: $color;
+  line-height: 1;
+  border-radius: $height / 2;
+  position: relative;
+  padding: ($height - $fontsize - 2 * $borderwidth) / 2 5px;
+  background-color: $bg-color;
+}
+
+@mixin btn-hover-click($color-hover, $bg-color-hover, $color-click, $bg-color-click) {
+  &:hover {
+    color: $color-hover;
+    border-color: $color-hover;
+    background-color: $bg-color-hover;
+  }
+  &:focus {
+    color: $color-click;
+    border-color: $color-click;
+    background-color: $bg-color-click;
+  }
+}
+
+@mixin btn-after-icon($font-size, $border-width) {
+  padding-left: 21px;
+  padding-right: 41px;
+  &:after {
+    font-family: "icons";
+    content: "\f102";
+    font-size: calculateRem($font-size);
+    display: inline-block;
+    height: calculateRem($font-size);
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    margin-top: - calculateRem($font-size - $border-width) / 2;
+  }
+}
+
+@mixin btn-before-icon($font-size, $border-width) {
+  padding-left: 41px;
+  padding-right: 21px;
+  &:before {
+    font-family: "icons";
+    content: "\f101";
+    font-size: calculateRem($font-size);
+    display: inline-block;
+    height: calculateRem($font-size);
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    margin-top: - calculateRem($font-size - $border-width) / 2;
+  }
+}
+
+@mixin circle($d, $bg-color) {
+  height: $d;
+  width: $d;
+  background-color: $bg-color;
+  border-radius: $d / 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin xsmall() {
+  @media only screen and (max-width: 320px) {
+    @content;
+  }
+}
+
+@mixin small() {
+  @media (min-width: 321px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin medium() {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin large() {
+  @media (min-width: 960px) {
+    @content;
+  }
+}

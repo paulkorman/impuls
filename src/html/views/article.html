@@ -1,0 +1,68 @@
+<% var data = {
+title: "Полезно знать | Импульс4",
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="container page article">
+    <div class="section">
+        <h4>Заголовок статьи</h4>
+        <div>
+            <picture>
+                <source srcset="img/article-desct-1.png" media="(min-width: 960px)">
+                <source srcset="img/article-tablet-1.jpg" media="(min-width: 321px)">
+                <img class="float-md-left article-top-img" src="img/article-mob-1.png" alt="">
+            </picture>
+            <h5 class="first-subtitle">Подзаголовок</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+            <p>Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+            <h5>Подзаголовок</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="text-center">
+            <a class="btn btn-back" href="articles.html">Вернуться к списку статей</a>
+        </div>
+    </div>
+    <div class="section">
+        <h5 class="text-center">Читать похожие статьи</h5>
+        <div class="other-articles">
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-3">
+                    <a class="lightbox text-center" href="articles.html">
+                        <div class="wrap-img">
+                            <img src="img/article-2.jpg" alt="">
+                        </div>
+                        <p class="descr">Длинный заголовок статьи в<br> две строки </p>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <a class="lightbox text-center" href="articles.html">
+                        <div class="wrap-img">
+                            <img src="img/article-2.jpg" alt="">
+                        </div>
+                        <p class="descr">Заголовок статьи</p>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <a class="lightbox text-center" href="articles.html">
+                        <div class="wrap-img">
+                            <img src="img/article-2.jpg" alt="">
+                        </div>
+                        <p class="descr">Длинный заголовок статьи в<br> две строки </p>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 d-md-none d-lg-block">
+                    <a class="lightbox text-center" href="articles.html">
+                        <div class="wrap-img">
+                            <img src="img/article-2.jpg" alt="">
+                        </div>
+                        <p class="descr">Заголовок статьи</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

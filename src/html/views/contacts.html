@@ -1,0 +1,86 @@
+<% var data = {
+title: "Контакты | Импульс4",
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="page contacts">
+    <div class="container section inf">
+        <h4>Контакты</h4>
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <p>
+                    <b>Импульс 4</b><br><br>
+                    69039, Украина,<br>
+                    г. Запорожье<br>
+                    ул. Героев 55-й бригады, 1
+                </p>
+                <p>
+                    <b>График работы:</b><br><br>
+                    Пн - пт с 8:00 до 17:00<br>
+                    Выходной: суббота, воскресенье
+                </p>
+            </div>
+            <div class="col-12 col-md-4">
+                <p>
+                    <b class="fs-16">Производственные участки</b><br>
+                    <br>
+                    <a class="blue" href="tel: +380504059070">050 405-90-70</a><br>
+                    Участок ремонта двигателей
+                    <br><br>
+                    <a class="blue" href="tel: +380503414315">050 341-43-15</a><br>
+                    Участок ремонта блоков грузовых автомобилей, спецтехники, карданных валов и координатно-расточных работ
+                    <br><br>
+                    <a class="blue" href="tel: +380503414320">050 341-43-20</a><br>
+                    Участок ремонта блоков легковых автомобилей и шатунов всех марок
+                    <br><br>
+                    <a class="blue" href="tel: +380503414316">050 341-43-16</a><br>
+                    Участок ремонта головок двигателей всех марок
+                </p>
+            </div>
+            <div class="col-12 col-md-4">
+                <p>
+                    <br class="d-none d-md-inline"><br class="d-none d-md-inline">
+                    <a class="blue" href="tel: +380503414318">050 341-43-18</a><br>
+                    Участок шлифовки коленчатых валов двигателей, максимальной длинной
+                    1600мм
+                    <br><br>
+                    <a class="blue" href="tel: +380503414319">050 341-43-19</a><br>
+                    Участок ремонта турбин, ТНВД и форсунок COMMON RAIL
+                    <br><br>
+                    <a class="blue" href="tel: +380504300920">050-430-09-20</a><br>
+                    Склад готовой продукции
+                    <br><br>
+                    <a class="blue" href="viber://add?number=+380503414334">050-341-43-34 (Viber)</a><br>
+                    Бухгалтерия
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section wrap-form">
+        <h5>
+            Есть вопросы?<br>
+            Пишите, и мы обязательно на<br class="d-md-none"> них ответим
+        </h5>
+        <form action="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <input type="text" class="form-control form-control-my mrg-b" placeholder="Ваше имя">
+                        <input type="email" class="form-control form-control-my is-invalid" placeholder="e-mail" value="Fail">
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <textarea class="form-control form-control-my textarea-my" placeholder="Опишите ваш вопрос"></textarea>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-form">Отправить</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="wrap-map">
+        <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1k7OQIWo-TXX463JsTuh1aNf3UkrDozMx"></iframe>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

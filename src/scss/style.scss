@@ -150,6 +150,11 @@ a:hover {
   margin: 0 auto;
 }
 
+.btn-modal {
+  @include btn($height: 40px, $borderwidth: 1px, $color: #00508f, $fontweight: 400, $fontsize: 14px, $minwidth: 85px, $bg-color: transparent);
+  @include btn-hover-click($color-hover: #0074cc, $bg-color-hover: transparent, $color-click: #004275, $bg-color-click: transparent);
+}
+
 .wrap-btn-circle {
   .btn-circle-title {
     font-size: 1rem;
@@ -471,7 +476,10 @@ footer {
   }
   .row {
     > div:first-child {
-      margin-bottom: 40px;
+      margin-bottom: 10px;
+      @include medium {
+        margin-bottom: 40px;
+      }
     }
   }
   .blue {
@@ -733,7 +741,7 @@ footer {
   .article-teaser{
     color: #000000 !important;
     .row {
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       @include medium {
         margin-bottom: 35px;
       }
@@ -965,6 +973,34 @@ footer {
       margin-left: 21px;
     }
   }
+}
+
+.modal-dialog {
+  max-width: 300px;
+  @include medium {
+    max-width: 390px;
+  }
+}
+
+.modal-content {
+  border-radius: 0;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  .modal-body {
+    padding: 52px 30px;
+    p {
+      font-size: calculateRem(18px);
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.modal.fade{
+  opacity:1;
+}
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0);
+  -moz-transform: translate(0);
+  transform: translate(0);
 }
 
 @media (max-width: 767px) {

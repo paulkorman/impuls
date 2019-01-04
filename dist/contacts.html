@@ -128,12 +128,34 @@
                 <textarea class="form-control form-control-my textarea-my" placeholder="Опишите ваш вопрос"></textarea>
               </div>
             </div>
-            <div class="text-center"><button class="btn btn-form">Отправить</button></div>
+            <div class="text-center">
+              <button type="button" class="btn btn-form" data-toggle="modal" data-target="#modal-contact-form">
+                Отправить
+              </button>
+            </div>
           </div>
         </form>
       </div>
       <div class="wrap-map">
         <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1k7OQIWo-TXX463JsTuh1aNf3UkrDozMx"></iframe>
+      </div>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="modal-contact-form"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body text-center">
+              <p class="message">Спасибо! <br />Мы свяжемся с вами <br />в ближайшее время.</p>
+              <button type="button" class="btn btn-modal" data-dismiss="modal">ок</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -175,7 +197,9 @@
               <p>
                 <br class="d-none d-md-inline" /><br class="d-none d-md-inline" />
                 <a class="blue" href="tel: +380503414318">050 341-43-18</a><br />
-                Участок шлифовки коленчатых валов двигателей, максимальной длинной 1600мм <br /><br />
+                Участок шлифовки коленчатых валов двигателей, максимальной <br class="d-none d-md-inline d-lg-none" />
+                длинной <br class="d-none d-md-inline" />
+                1600мм <br /><br />
                 <a class="blue" href="tel: +380503414319">050 341-43-19</a><br />
                 Участок ремонта турбин, ТНВД и форсунок COMMON RAIL <br /><br />
                 <a class="blue" href="tel: +380504300920">050-430-09-20</a><br />

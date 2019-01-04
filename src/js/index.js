@@ -21,5 +21,16 @@ $(document).ready(function(){
             buttons	: {}
         }
     });
+
+    function testAnim(x) {
+        $('.modal .modal-dialog').attr('class', 'modal-dialog  modal-dialog-centered ' + x + '  animated');
+    };
+    $('#modal-contact-form').on('show.bs.modal', function (e) {
+        testAnim("fadeIn");
+    });
+    $('#modal-contact-form').on('hide.bs.modal', function (e) {
+        testAnim("fadeOut");
+    })
+
 });
 
